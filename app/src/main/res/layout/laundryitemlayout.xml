@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation = "vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Itemname"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="quantity"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="price"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Pant"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:id="@+id/qshirt"
+
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="10 ru."
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Shirt"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:id="@+id/qpant"
+
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="10 ru."
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recieve"
+            android:id="@+id/recieve"
+            />
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="status:"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="pending"
+            android:textSize="20dp"
+            android:id="@+id/status"
+            android:textAlignment="center"
+            android:background="@color/color_red"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="total="
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/total_bill"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation = "vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Itemname"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="quantity"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="price"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Pant"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:id="@+id/shirtq"
+
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="10 ru."
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Shirt"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pantq"
+
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="10 ru."
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="SAVE"
+        android:id="@+id/save"/>
+
+</LinearLayout>
