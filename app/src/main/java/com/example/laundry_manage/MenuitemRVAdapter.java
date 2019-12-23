@@ -54,7 +54,9 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
         holder.recieve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                MainActivity mainact= new MainActivity();
                itemList.get(position).setstatuscode(1);
+               mainact.saveItems(context,itemList);
                 holder.status.setText("recieved");
                 holder.status.setBackgroundColor(Color.parseColor("#85D530"));
                 holder.recieve.setVisibility(View.GONE);
@@ -71,6 +73,8 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
 
 
+
         return itemList.size();
+
     }
 }
