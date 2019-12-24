@@ -2,91 +2,171 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation = "vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Item"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="cursive"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantity"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="cursive"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <TextView
-            android:layout_width="148dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Itemname"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:layout_width="112dp"
-            android:layout_height="match_parent"
-            android:text="quantity"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="price"
-            android:textSize="20dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="148dp"
-            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Pant"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
 
         <EditText
-            android:layout_width="112dp"
-            android:layout_height="match_parent"
-            android:id="@+id/shirtq"
-
-            android:textSize="20sp"/>
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/pantq"
+            android:hint="0"
+            />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="10 ru."
-            android:textSize="20dp"/>
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <TextView
-            android:layout_width="148dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Shirt"
-            android:textSize="20dp" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
 
         <EditText
-            android:layout_width="112dp"
-            android:layout_height="match_parent"
-            android:id="@+id/pantq"
-
-            android:textSize="20dp"/>
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/shirtq"
+            android:hint="0"
+            />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="10 ru."
-            android:textSize="20dp"/>
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
 
     </LinearLayout>
 
-
-    <Button
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:text="SAVE"
-        android:id="@+id/save"/>
+        android:layout_height="wrap_content">
 
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/done"
+            android:id="@+id/save"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
 </LinearLayout>
