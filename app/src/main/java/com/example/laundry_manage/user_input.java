@@ -30,6 +30,7 @@ EditText q_shirt,q_pant;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_input);
 
+
         q_shirt=findViewById(R.id.shirtq);
         q_pant=findViewById(R.id.pantq);
 

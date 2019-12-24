@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
+    android:scrollbars="vertical"
 
     >
     <LinearLayout
@@ -156,9 +157,743 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jeans"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/jeansq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Shorts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/shortsq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Innerwear"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/innerwearq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Socks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/socksq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lab Coat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/labcoatq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bedsheet"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/bedsheetq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pillow Cover"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/pillowcoverq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Napkin"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/napkinq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Towel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/towelq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Blanket"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/blanketq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="50"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Suit"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/suitq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="170"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sweat Shirt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/sweatshirtq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jacket"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:inputType="number"
+            android:id="@+id/jacketq"
+            android:hint="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="casual"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salwar"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="textStart"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:inputType="number"
+                android:id="@+id/salwarq"
+                android:hint="0"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="textEnd"
+                android:padding="5dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kameez"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="textStart"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:inputType="number"
+                android:id="@+id/kameezq"
+                android:hint="0"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="textEnd"
+                android:padding="5dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <Button
             android:layout_width="60dp"
