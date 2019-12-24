@@ -26,6 +26,7 @@
             android:text="price"
             android:textSize="20dp"/>
 
+
     </LinearLayout>
 
     <LinearLayout
