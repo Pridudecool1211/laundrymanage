@@ -40,8 +40,8 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
 
 
-        holder.q_pant.setText(String.valueOf(qtyary[1]));
-        holder.q_shirt.setText(String.valueOf(qtyary[0]));
+        holder.q_pant.setText(String.valueOf(qtyary[0]));
+        holder.q_shirt.setText(String.valueOf(qtyary[1]));
         holder.total_bill.setText(String.valueOf(bill));
 
         if(itemList.get(position).getstatuscode()==1)
