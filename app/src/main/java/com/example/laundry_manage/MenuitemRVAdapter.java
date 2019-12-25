@@ -42,6 +42,24 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
         holder.q_pant.setText(String.valueOf(qtyary[0]));
         holder.q_shirt.setText(String.valueOf(qtyary[1]));
+        holder.q_jeans.setText(String.valueOf(qtyary[2]));
+        holder.q_shorts.setText(String.valueOf(qtyary[3]));
+        holder.q_innerwear.setText(String.valueOf(qtyary[4]));
+        holder.q_socks.setText(String.valueOf(qtyary[5]));
+        holder.q_labcoat.setText(String.valueOf(qtyary[6]));
+        holder.q_bedsheet.setText(String.valueOf(qtyary[7]));
+        holder.q_pillowcover.setText(String.valueOf(qtyary[8]));
+        holder.q_napkin.setText(String.valueOf(qtyary[9]));
+        holder.q_towel.setText(String.valueOf(qtyary[10]));
+        holder.q_blanket.setText(String.valueOf(qtyary[11]));
+        holder.q_suit.setText(String.valueOf(qtyary[12]));
+        holder.q_sweatshirt.setText(String.valueOf(qtyary[13]));
+        holder.q_jacket.setText(String.valueOf(qtyary[14]));
+        holder.q_salwar.setText(String.valueOf(qtyary[15]));
+        holder.q_kameez.setText(String.valueOf(qtyary[16]));
+
+
+
         holder.total_bill.setText(String.valueOf(bill));
 
         if(itemList.get(position).getstatuscode()==1)
