@@ -22,6 +22,7 @@ public class user_input extends AppCompatActivity  {
 EditText q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez;
 
 
+
     public user_input(){}
 
 
@@ -58,7 +59,64 @@ EditText q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedshee
             @Override
             public void onClick(View v) {
 
-int[] qarr={Integer.parseInt(q_pant.getText().toString()),Integer.parseInt(q_shirt.getText().toString()),Integer.parseInt(q_jeans.getText().toString()),Integer.parseInt(q_shorts.getText().toString()),Integer.parseInt(q_innerwear.getText().toString()),Integer.parseInt(q_socks.getText().toString()),Integer.parseInt(q_labcoat.getText().toString()),Integer.parseInt(q_bedsheet.getText().toString()),Integer.parseInt(q_pillowcover.getText().toString()),Integer.parseInt(q_napkin.getText().toString()),Integer.parseInt(q_towel.getText().toString()),Integer.parseInt(q_blanket.getText().toString()),Integer.parseInt(q_suit.getText().toString()),Integer.parseInt(q_sweatshirt.getText().toString()),Integer.parseInt(q_jacket.getText().toString()),Integer.parseInt(q_salwar.getText().toString()),Integer.parseInt(q_kameez.getText().toString())};
+                if(q_pant.getText()==null||q_pant.getText().toString().equals("")){
+                    q_pant.setText("0");
+                }
+                if(q_shirt.getText()==null||q_shirt.getText().toString().equals("")){
+                    q_shirt.setText("0");
+                }
+                if(q_jeans.getText()==null||q_jeans.getText().toString().equals("")){
+                    q_jeans.setText("0");
+                }
+                if(q_shorts.getText()==null||q_shorts.getText().toString().equals("")){
+                    q_shorts.setText("0");
+                }
+                if(q_innerwear.getText()==null||q_innerwear.getText().toString().equals("")){
+                    q_innerwear.setText("0");
+                }
+                if(q_socks.getText()==null||q_socks.getText().toString().equals("")){
+                    q_socks.setText("0");
+                }
+                if(q_labcoat.getText()==null||q_labcoat.getText().toString().equals("")){
+                    q_labcoat.setText("0");
+                }
+                if(q_bedsheet.getText()==null||q_bedsheet.getText().toString().equals("")){
+                    q_bedsheet.setText("0");
+                }
+                if(q_pillowcover.getText()==null||q_pillowcover.getText().toString().equals("")){
+                    q_pillowcover.setText("0");
+                }
+                if(q_napkin.getText()==null||q_napkin.getText().toString().equals("")){
+                    q_napkin.setText("0");
+                }
+                if(q_towel.getText()==null||q_towel.getText().toString().equals("")){
+                    q_towel.setText("0");
+                }
+                if(q_blanket.getText()==null||q_blanket.getText().toString().equals("")){
+                    q_blanket.setText("0");
+                }
+                if(q_suit.getText()==null||q_suit.getText().toString().equals("")){
+                    q_suit.setText("0");
+                }if(q_sweatshirt.getText()==null||q_sweatshirt.getText().toString().equals("")){
+                    q_sweatshirt.setText("0");
+                }
+                if(q_jacket.getText()==null||q_jacket.getText().toString().equals("")){
+                    q_jacket.setText("0");
+                }
+                if(q_salwar.getText()==null||q_salwar.getText().toString().equals("")){
+                    q_salwar.setText("0");
+                }
+                if(q_kameez.getText()==null||q_kameez.getText().toString().equals("")){
+                    q_kameez.setText("0");
+                }
+
+
+
+
+
+          int[] qarr={Integer.parseInt(q_pant.getText().toString()),Integer.parseInt(q_shirt.getText().toString()),Integer.parseInt(q_jeans.getText().toString()),Integer.parseInt(q_shorts.getText().toString()),Integer.parseInt(q_innerwear.getText().toString()),Integer.parseInt(q_socks.getText().toString()),Integer.parseInt(q_labcoat.getText().toString()),Integer.parseInt(q_bedsheet.getText().toString()),Integer.parseInt(q_pillowcover.getText().toString()),Integer.parseInt(q_napkin.getText().toString()),Integer.parseInt(q_towel.getText().toString()),Integer.parseInt(q_blanket.getText().toString()),Integer.parseInt(q_suit.getText().toString()),Integer.parseInt(q_sweatshirt.getText().toString()),Integer.parseInt(q_jacket.getText().toString()),Integer.parseInt(q_salwar.getText().toString()),Integer.parseInt(q_kameez.getText().toString())};
+
+
 
                 LaundryItem input = new LaundryItem(qarr);
 
