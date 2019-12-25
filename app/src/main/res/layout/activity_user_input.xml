@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation = "vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:scrollbars="vertical"
 
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -746,50 +749,56 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Jacket"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:fontFamily="casual"
-            android:textAlignment="textStart"
-            android:padding="5dp"
-            />
 
-        <EditText
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:fontFamily="casual"
-            android:textAlignment="center"
-            android:padding="5dp"
-            android:inputType="number"
-            android:id="@+id/jacketq"
-            android:hint="0"
-            />
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jacket"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="textStart"
+                android:padding="5dp"
+                />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="20"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:fontFamily="casual"
-            android:textAlignment="textEnd"
-            android:padding="5dp"
-            />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:inputType="number"
+                android:id="@+id/jacket"
+                android:hint="0"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="casual"
+                android:textAlignment="textEnd"
+                android:padding="5dp"
+                />
+
+
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -819,7 +828,7 @@
                 android:textAlignment="center"
                 android:padding="5dp"
                 android:inputType="number"
-                android:id="@+id/salwarq"
+                android:id="@+id/salwar"
                 android:hint="0"
                 />
 
@@ -827,7 +836,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="10"
+                android:text="20"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -868,7 +877,7 @@
                 android:textAlignment="center"
                 android:padding="5dp"
                 android:inputType="number"
-                android:id="@+id/kameezq"
+                android:id="@+id/kameez"
                 android:hint="0"
                 />
 
@@ -876,7 +885,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="10"
+                android:text="20"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -890,18 +899,26 @@
         </LinearLayout>
 
 
-    </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/done"
-            android:id="@+id/save"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            />
-    </RelativeLayout>
-</LinearLayout>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/done"
+                android:id="@+id/save"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
