@@ -9,77 +9,495 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="148dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Itemname"
-            android:textSize="20dp"/>
+            android:text="Item"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"/>
 
         <TextView
-            android:layout_width="112dp"
-            android:layout_height="match_parent"
-            android:text="quantity"
-            android:textSize="20dp"/>
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="casual"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="price"
-            android:textSize="20dp"/>
+
 
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="148dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Pant"
-            android:textSize="20sp" />
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
 
         <TextView
-            android:layout_width="112dp"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/qpant"
-
-            android:textSize="20sp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="10 ru."
-            android:textSize="20dp"/>
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="148dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Shirt"
-            android:textSize="20dp" />
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
 
         <TextView
-            android:layout_width="112dp"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/qshirt"
-
-            android:textSize="20dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="10 ru."
-            android:textSize="20dp"/>
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jeans"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qjeans"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shorts"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qshorts"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Innerwear"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qinnerwear"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Socks"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qsocks"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lab Coat"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qlabcoat"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bedsheet"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qbedsheet"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pillow Cover"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qpillowcover"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Napkin"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qnapkin"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Towel"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qtowel"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Blanket"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qblanket"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Suit"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qsuit"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sweat Shirt"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qsweatshirt"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jacket"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qjacket"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Salwar"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qsalwar"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kameez"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/qkameez"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
