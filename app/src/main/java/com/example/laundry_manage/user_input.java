@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -50,12 +51,7 @@ EditText q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedshee
         q_kameez=findViewById(R.id.kameezq);
 
 
-
-
-
         save=findViewById(R.id.save);
-
-
 
 
         save.setOnClickListener(new View.OnClickListener() {
