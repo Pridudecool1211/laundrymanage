@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -11,13 +12,17 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+
 
 public class MenuItemViewHolder extends RecyclerView.ViewHolder {
 
 
-    TextView q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez,total_bill,status;
+    TextView textView1,textView2,q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez,total_bill,status;
     Button recieve;
+    LinearLayout llmain,llnmain;
 
 
 
@@ -49,6 +54,31 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
 
 
         recieve = itemView.findViewById(R.id.recieve);
+
+        llmain=itemView.findViewById(R.id.llmain);
+        llnmain = itemView.findViewById(R.id.llnmain);
+        textView1=itemView.findViewById(R.id.textview1);
+        textView2=itemView.findViewById(R.id.textview2);
+        textView2.setText(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date()));
+
+
+        llnmain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                llmain.setVisibility(View.VISIBLE);
+
+
+            }
+        });
+
+        llmain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                llmain.setVisibility(View.GONE);
+            }
+        });
+
+
 
 
 

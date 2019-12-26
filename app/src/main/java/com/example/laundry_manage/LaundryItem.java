@@ -6,6 +6,7 @@ public class LaundryItem implements Serializable {
     private int bill;
     private int statuscode;
 
+
     public LaundryItem( int[] qty) {
         for(int i=0;i<qty.length;i++)
         {
@@ -53,6 +54,8 @@ public int returnbill()
     public int getstatuscode(){
         return statuscode;
     }
+
+
 
 
   //  public void setquantity(int price) {
