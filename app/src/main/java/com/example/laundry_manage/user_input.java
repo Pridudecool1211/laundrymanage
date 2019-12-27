@@ -19,7 +19,7 @@ public class user_input extends AppCompatActivity  {
 
 
     Button save;
-EditText q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez;
+    EditText q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez;
 
 
 
@@ -114,7 +114,7 @@ EditText q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedshee
 
 
 
-          int[] qarr={Integer.parseInt(q_pant.getText().toString()),Integer.parseInt(q_shirt.getText().toString()),Integer.parseInt(q_jeans.getText().toString()),Integer.parseInt(q_shorts.getText().toString()),Integer.parseInt(q_innerwear.getText().toString()),Integer.parseInt(q_socks.getText().toString()),Integer.parseInt(q_labcoat.getText().toString()),Integer.parseInt(q_bedsheet.getText().toString()),Integer.parseInt(q_pillowcover.getText().toString()),Integer.parseInt(q_napkin.getText().toString()),Integer.parseInt(q_towel.getText().toString()),Integer.parseInt(q_blanket.getText().toString()),Integer.parseInt(q_suit.getText().toString()),Integer.parseInt(q_sweatshirt.getText().toString()),Integer.parseInt(q_jacket.getText().toString()),Integer.parseInt(q_salwar.getText().toString()),Integer.parseInt(q_kameez.getText().toString())};
+                int[] qarr={Integer.parseInt(q_pant.getText().toString()),Integer.parseInt(q_shirt.getText().toString()),Integer.parseInt(q_jeans.getText().toString()),Integer.parseInt(q_shorts.getText().toString()),Integer.parseInt(q_innerwear.getText().toString()),Integer.parseInt(q_socks.getText().toString()),Integer.parseInt(q_labcoat.getText().toString()),Integer.parseInt(q_bedsheet.getText().toString()),Integer.parseInt(q_pillowcover.getText().toString()),Integer.parseInt(q_napkin.getText().toString()),Integer.parseInt(q_towel.getText().toString()),Integer.parseInt(q_blanket.getText().toString()),Integer.parseInt(q_suit.getText().toString()),Integer.parseInt(q_sweatshirt.getText().toString()),Integer.parseInt(q_jacket.getText().toString()),Integer.parseInt(q_salwar.getText().toString()),Integer.parseInt(q_kameez.getText().toString())};
 
 
 

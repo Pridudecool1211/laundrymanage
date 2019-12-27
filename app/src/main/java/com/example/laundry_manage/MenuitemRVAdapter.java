@@ -5,11 +5,15 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> {
 
@@ -17,6 +21,7 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
     ArrayList<LaundryItem> itemList;
 
     Context context;
+
 
     public MenuitemRVAdapter(ArrayList<LaundryItem> itemList, Context context) {
         this.itemList = itemList;
@@ -60,6 +65,18 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
 
 
+
+
+
+        holder.textView1.setText(String.valueOf(bill));
+
+
+
+
+
+
+
+
         holder.total_bill.setText(String.valueOf(bill));
 
         if(itemList.get(position).getstatuscode()==1)
@@ -84,7 +101,17 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
 
 
+
+
+
+
+
+
+
+
     }
+
+
 
     @Override
     public int getItemCount() {
@@ -95,4 +122,7 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
         return itemList.size();
 
     }
+
+
+
 }
