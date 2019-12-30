@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<LaundryItem> itemlist= new ArrayList<>();
     ArrayList<LaundryItem> t_itemlist= new ArrayList<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +78,14 @@ public class MainActivity extends AppCompatActivity {
             if(resultCode == RESULT_OK){
                 LaundryItem Input=(LaundryItem) data.getSerializableExtra("result");
                 int[] quantity=Input.getquantity();
-                itemlist.add(0,new LaundryItem(quantity));
+
+                final  SharedPreferences sd = getApplicationContext().getSharedPreferences("MYPREF",MODE_PRIVATE);
+                SharedPreferences.Editor ed = sd.edit();
+
+               // sd.getString("Dates","N/A");
+                //Toast.makeText(this, sd.getString("Dates","N/A"), Toast.LENGTH_SHORT).show();
+
+                itemlist.add(0,new LaundryItem(quantity,sd.getString("Dates","N/A")));
                 saveItems(getApplicationContext(),itemlist);
                 initRecyclerView();
             }
