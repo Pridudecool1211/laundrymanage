@@ -5,14 +5,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation = "vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/llnmain"
         android:orientation="horizontal"
-        android:layout_margin="5dp">
+        android:layout_margin="0dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,29 +26,55 @@
             android:textSize="20sp"
             android:layout_weight="1"/>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+             <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="N/A"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:id="@+id/textview2"
-            android:layout_weight="2"
+            android:textStyle="bold"
             android:textColor="#000"
-            android:textAlignment="textEnd"/>
+            android:layout_toLeftOf="@+id/textview3"
+            android:layout_alignParentTop="true"
+                 android:scaleY="1.5"
 
-            <TextView
-                android:layout_width="match_parent"
+
+
+                />
+
+                <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N/A"
                 android:textSize="15sp"
                 android:id="@+id/textview3"
-                android:textAlignment="textEnd"
                 android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+
                 />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textview3"
+                    android:id="@+id/textview4"/>
+
+            </RelativeLayout>
 
 
 
