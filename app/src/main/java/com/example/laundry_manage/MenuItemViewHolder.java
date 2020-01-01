@@ -87,6 +87,16 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
+        llmain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                llmain.setVisibility(View.GONE);
+                imageView.setImageResource(R.drawable.expand);
+            }
+        });
+
+
+
 
 
 
