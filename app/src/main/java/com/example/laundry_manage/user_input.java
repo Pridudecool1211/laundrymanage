@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
@@ -13,7 +14,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class user_input extends AppCompatActivity  {
 
@@ -24,6 +27,7 @@ public class user_input extends AppCompatActivity  {
 
 
     public user_input(){}
+
 
 
 
@@ -110,6 +114,8 @@ public class user_input extends AppCompatActivity  {
                     q_kameez.setText("0");
                 }
 
+                String date=(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date())).toString();
+
 
 
 
@@ -117,8 +123,14 @@ public class user_input extends AppCompatActivity  {
                 int[] qarr={Integer.parseInt(q_pant.getText().toString()),Integer.parseInt(q_shirt.getText().toString()),Integer.parseInt(q_jeans.getText().toString()),Integer.parseInt(q_shorts.getText().toString()),Integer.parseInt(q_innerwear.getText().toString()),Integer.parseInt(q_socks.getText().toString()),Integer.parseInt(q_labcoat.getText().toString()),Integer.parseInt(q_bedsheet.getText().toString()),Integer.parseInt(q_pillowcover.getText().toString()),Integer.parseInt(q_napkin.getText().toString()),Integer.parseInt(q_towel.getText().toString()),Integer.parseInt(q_blanket.getText().toString()),Integer.parseInt(q_suit.getText().toString()),Integer.parseInt(q_sweatshirt.getText().toString()),Integer.parseInt(q_jacket.getText().toString()),Integer.parseInt(q_salwar.getText().toString()),Integer.parseInt(q_kameez.getText().toString())};
 
 
+                final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("MYPREF",MODE_PRIVATE);
+               final SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("Dates",date);
+                editor.commit();
 
-                LaundryItem input = new LaundryItem(qarr);
+
+                LaundryItem input = new LaundryItem(qarr,"");
+
 
                 Intent returnIntent = new Intent();
                 returnIntent.putExtra("result",input);

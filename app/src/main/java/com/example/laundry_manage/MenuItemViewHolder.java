@@ -60,7 +60,7 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
         llnmain = itemView.findViewById(R.id.llnmain);
         textView1=itemView.findViewById(R.id.textview1);
         textView2=itemView.findViewById(R.id.textview2);
-        textView2.setText(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date()));
+        //textView2.setText(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date()));
 
 
         llnmain.setOnClickListener(new View.OnClickListener() {
