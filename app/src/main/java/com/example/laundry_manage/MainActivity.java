@@ -13,8 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+
 import com.google.gson.Gson;
 import java.lang.reflect.Type;
 import com.google.gson.reflect.TypeToken;
@@ -27,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     MenuitemRVAdapter adapter;
     Button add;
-    FirebaseAuth mAuth;
-    FirebaseUser user;
 
 
     ArrayList<LaundryItem> itemlist= new ArrayList<>();
@@ -38,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mAuth = FirebaseAuth.getInstance();
-        user = mAuth.getCurrentUser();
 
         t_itemlist=getItems(getApplicationContext());
         if(t_itemlist==null)

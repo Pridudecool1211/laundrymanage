@@ -23,6 +23,7 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
     TextView textView1,textView2,q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez,total_bill,status;
     Button recieve;
     LinearLayout llmain,llnmain;
+    int clickcount=0;
 
 
 
@@ -65,18 +66,17 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
         llnmain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                llmain.setVisibility(View.VISIBLE);
-
-
-            }
-        });
-
-        llmain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                clickcount=clickcount+1;
+                if(clickcount%2==0)
                 llmain.setVisibility(View.GONE);
+                else
+                    llmain.setVisibility(View.VISIBLE);
+
+
             }
         });
+
+
 
 
 

@@ -8,4 +8,5 @@
     <color name ="color_green">#85D530</color>
     <color name ="color_4">#FFC107</color>
     <color name ="color_5">#673AB7</color>
+    <color name="colorRipple">#A9A9F5</color>
 </resources>
