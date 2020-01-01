@@ -74,9 +74,11 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
         holder.textView2.setText(dt.substring(0,2));  //dt.length()-5
         holder.textView4.setText(dt.substring(dt.length()-5));
 
+        holder.imageView.setImageResource(R.drawable.expand);
+
         if(position%2==0)
         {
-            holder.llnmain.setBackgroundResource(R.drawable.rect10);
+            holder.llnmain.setBackgroundResource(R.drawable.rect7);
         }
         else
             {

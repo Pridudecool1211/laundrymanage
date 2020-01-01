@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
     Button recieve;
     LinearLayout llmain,llnmain;
     int clickcount=0;
+    ImageView imageView;
 
 
 
@@ -65,14 +67,21 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
         //textView2.setText(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date()));
 
 
+
+        imageView=itemView.findViewById(R.id.image);
+
         llnmain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clickcount=clickcount+1;
-                if(clickcount%2==0)
+                if(clickcount%2==0){
                 llmain.setVisibility(View.GONE);
+                imageView.setImageResource(R.drawable.expand);}
+
                 else
-                    llmain.setVisibility(View.VISIBLE);
+                {llmain.setVisibility(View.VISIBLE);
+                    imageView.setImageResource(R.drawable.restore);}
+
 
 
             }
