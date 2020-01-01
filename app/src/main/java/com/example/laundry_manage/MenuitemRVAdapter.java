@@ -70,7 +70,8 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
         holder.textView1.setText(String.valueOf(bill));
         String dt=itemList.get(position).returndate();
-        holder.textView2.setText((dt));
+        holder.textView3.setText((dt.substring(0,12)));
+        holder.textView2.setText(dt.substring(dt.length()-5));
 
 
 

@@ -114,7 +114,8 @@ public class user_input extends AppCompatActivity  {
                     q_kameez.setText("0");
                 }
 
-                String date=(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date())).toString();
+                String date=(new SimpleDateFormat("dd MMM, yyyy HH:mm").format(new Date()));
+                //Toast.makeText(user_input.this, date, Toast.LENGTH_SHORT).show();
 
 
 

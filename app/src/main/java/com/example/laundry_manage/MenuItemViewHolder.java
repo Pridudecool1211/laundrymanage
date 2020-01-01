@@ -20,7 +20,7 @@ import java.util.Date;
 public class MenuItemViewHolder extends RecyclerView.ViewHolder {
 
 
-    TextView textView1,textView2,q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez,total_bill,status;
+    TextView textView1,textView2,textView3,q_shirt,q_pant,q_jeans,q_shorts,q_innerwear,q_socks,q_labcoat,q_bedsheet,q_pillowcover,q_napkin,q_towel,q_blanket,q_suit,q_sweatshirt,q_jacket,q_salwar,q_kameez,total_bill,status;
     Button recieve;
     LinearLayout llmain,llnmain;
     int clickcount=0;
@@ -60,6 +60,7 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
         llnmain = itemView.findViewById(R.id.llnmain);
         textView1=itemView.findViewById(R.id.textview1);
         textView2=itemView.findViewById(R.id.textview2);
+        textView3=itemView.findViewById(R.id.textview3);
         //textView2.setText(new SimpleDateFormat("  dd MMM,yy HH:mm:ss aa").format(new Date()));
 
 
