@@ -68,12 +68,21 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
 
 
-        holder.textView1.setText(String.valueOf(bill));
+        holder.textView1.setText("Total: "+String.valueOf(bill));
         String dt=itemList.get(position).returndate();
         holder.textView3.setText(" " +(dt.substring(3,12)));
         holder.textView2.setText(dt.substring(0,2));  //dt.length()-5
         holder.textView4.setText(dt.substring(dt.length()-5));
 
+        if(position%2==0)
+        {
+            holder.llnmain.setBackgroundResource(R.drawable.rect10);
+        }
+        else
+            {
+
+            holder.llnmain.setBackgroundResource(R.drawable.rect7);
+        }
 
 
 
