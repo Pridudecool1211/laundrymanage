@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     MenuitemRVAdapter adapter;
-    Button add;
+    Button add,clrhistory;
 
 
     ArrayList<LaundryItem> itemlist= new ArrayList<>();
@@ -59,6 +59,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
         initRecyclerView();
+
+        clrhistory=findViewById(R.id.clr_his);
+        clrhistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for(int i=itemlist.size()-1;i>=0;i--)
+                {
+                    if((itemlist.get(i).getstatuscode())==1)
+                    {
+                        itemlist.remove(i);
+                    }
+                }
+                saveItems(getApplicationContext(),itemlist);
+                initRecyclerView();
+            }
+        });
+
+
 
 
 

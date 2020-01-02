@@ -14,6 +14,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 
 public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> {
 
@@ -76,15 +77,14 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
         holder.imageView.setImageResource(R.drawable.expand);
 
-        if(position%2==0)
-        {
-            holder.llnmain.setBackgroundResource(R.drawable.rect7);
-        }
-        else
-            {
+        Random random = new Random();
+        int rndInt = random.nextInt(9) + 1;
+        String drawableName = "rect"+ rndInt;
 
-            holder.llnmain.setBackgroundResource(R.drawable.rect7);
-        }
+        int resID = context.getResources().getIdentifier(drawableName, "drawable",  context.getPackageName());
+        holder.llnmain.setBackgroundResource(resID);
+
+
 
 
 
