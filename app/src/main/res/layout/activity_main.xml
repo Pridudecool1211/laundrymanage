@@ -25,7 +25,8 @@
         android:id="@+id/clr_his"
         android:layout_margin="5dp"
         android:layout_marginBottom="2dp"
-        android:background="@drawable/delet"/>
+        android:background="@drawable/delet"
+        />
 
 
 

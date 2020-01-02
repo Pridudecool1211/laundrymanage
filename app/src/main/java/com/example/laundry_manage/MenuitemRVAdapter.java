@@ -77,12 +77,8 @@ public class MenuitemRVAdapter extends RecyclerView.Adapter<MenuItemViewHolder> 
 
         holder.imageView.setImageResource(R.drawable.expand);
 
-        Random random = new Random();
-        int rndInt = random.nextInt(9) + 1;
-        String drawableName = "rect"+ rndInt;
 
-        int resID = context.getResources().getIdentifier(drawableName, "drawable",  context.getPackageName());
-        holder.llnmain.setBackgroundResource(resID);
+        holder.llnmain.setBackgroundResource(R.drawable.rect7);
 
 
 
