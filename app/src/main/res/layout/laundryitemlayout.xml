@@ -618,46 +618,59 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp">
 
+
         <Button
 
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Recieve"
             android:id="@+id/recieve"
+            android:layout_weight="1"
+
 
             />
 
         <TextView
-            android:layout_width="77dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="status:"
+            android:text="Status:"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_weight="1"
+            />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="pending"
             android:textSize="20dp"
             android:id="@+id/status"
             android:textAlignment="center"
             android:background="@color/color_red"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_weight="1"
+
+            />
 
         <TextView
-            android:layout_width="74dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="total="
+            android:text="Total="
             android:textSize="20dp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/total_bill"
             android:textSize="20dp"
             android:textColor="#000"
-            android:layout_gravity="center_vertical"/>
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
 
     </LinearLayout>
     </LinearLayout>
