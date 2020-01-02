@@ -114,7 +114,10 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:visibility="gone"
-        android:id="@+id/llmain">
+        android:id="@+id/llmain"
+
+
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -621,11 +624,15 @@
 
         <Button
 
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Recieve"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+
             android:id="@+id/recieve"
-            android:layout_weight="1"
+            android:background="@drawable/r3"
+
+
+
+
 
 
             />
@@ -668,7 +675,7 @@
             android:textSize="20dp"
             android:textColor="#000"
             android:layout_weight="1"
-            android:textAlignment="center"
+
             />
 
 
